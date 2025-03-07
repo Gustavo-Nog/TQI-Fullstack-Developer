@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  align-items: center;
+  background-image: url(/Módulo-HTML-CSS/Meus-projetos/MercadoMunicipal.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  filter: grayscale(0.5);
+  height: 400px;
+  justify-content: center;
+  transition: 0.3s;
+  width: 500px;
+}
+
+.card-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.card-wrapper::before {
+  border: 3px solid white;
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0;
+  height: 100px;
+  width: 100px;
+  transition: 0.3s;
+}
+
+.card-wrapper h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.card-wrapper p {
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.card:hover {
+  filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+  height: 300px;
+  width: 400px;
+  opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+  opacity: 1;
+  font-size: 14px;
+  visibility: visible;
+}
