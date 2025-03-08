@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(169, 117, 169);
+}
+
+h1 {
+  color: bisque;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-self: start;
+  justify-content: center;
+}

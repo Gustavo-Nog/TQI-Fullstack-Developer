@@ -1,0 +1,15 @@
+body {
+  background-color: mediumturquoise;
+  color: darkgrey;
+  padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  color: darkorange;
+  height: 70px;
+  width: 70px;
+  display: flexbox;
+  align-items: center;
+  justify-content: flex-end;
+}
