@@ -1,0 +1,13 @@
+body {
+  padding: 20px;
+  background-color: chocolate;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: lightseagreen;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
